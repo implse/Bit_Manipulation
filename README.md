@@ -101,8 +101,11 @@ Each shift is a multiply by 2(unless there is overflow).
 |01011000 |
 
 
+```
 0b00000001 << 2 == 0b00000100 (1 << 2 = 4)
+
 0b00000101 << 3 == 0b00101000 (5 << 3 = 40)
+```
 
 
 ### RIGHT BIT SHIFT
@@ -121,5 +124,8 @@ Each shift is a divide by 2 with round towards negative infinity.
 |00000101 |
 
 
+```
 0b00010100 >> 3 == 0b00000010 (20 >> 3 = 2)
+
 0b00000010 >> 2 == 0b00000000 ( 2 >> 2 = 0)
+```
