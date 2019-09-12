@@ -92,13 +92,6 @@ Shift the binary digits by n, pad 0's on the right.
 
 Each shift is a multiply by 2(unless there is overflow).
 
-|Operation|
-|:--------|
-|00010110 |  
-|<<       |
-|00000010 | left shift by 2 == multiply by 2
-=
-|01011000 |
 
 ```
 128| 64| 32| 16| 8 | 4 | 2 | 1 |
