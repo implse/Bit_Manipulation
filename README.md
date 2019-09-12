@@ -87,7 +87,7 @@ Flips the input bit.
 ```
 ~ 0 = 1
 ~ 1 = 0
-``
+```
 
 
 ### LEFT BIT SHIFT
