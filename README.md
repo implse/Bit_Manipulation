@@ -144,7 +144,7 @@ Each shift is a divide by 2 with round towards negative infinity.
 ```
 You can only do bitwise operations on an integer.
 
-# BIT MASK
+### BIT MASK
 
 A bit mask is just a variable that aids you with bitwise operations. A bit mask can help you turn specific bits on, turn others off, or just collect data from an integer about which bits are on or off.
 
