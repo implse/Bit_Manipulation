@@ -96,7 +96,7 @@ Flips the input bit.
 ~ 0 = 1
 ~ 1 = 0
 ```
-
+Mathematically, this is equivalent to adding one to the number and then making it negative.
 
 ### LEFT BIT SHIFT
 
