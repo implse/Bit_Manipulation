@@ -143,3 +143,21 @@ Each shift is a divide by 2 with round towards negative infinity.
 0b00000010 >> 2 == 0b00000000 (2 >> 2 = 0)
 ```
 You can only do bitwise operations on an integer.
+
+# BIT MASK
+
+A bit mask is just a variable that aids you with bitwise operations. A bit mask can help you turn specific bits on, turn others off, or just collect data from an integer about which bits are on or off.
+
+```
+num  = 0b1100
+mask = 0b0100
+desired = num & mask
+if desired > 0:
+  print "Bit was on"
+```
+
+
+1 - Create a variable num containing the number 12, or 0b1100.
+2 - Create a mask with the third bit on.
+3 - Use a bitwise-and operation to see if the third bit from the right of num is on.
+4 - If desired is greater than zero, then the third bit of num must have been one.
