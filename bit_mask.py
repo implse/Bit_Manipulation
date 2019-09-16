@@ -9,3 +9,7 @@ def clear_bit(x, position):
 def flip_bit(x, position):
     mask = 0b1 << position
     return x ^ mask
+
+def is_bit_set(x, position):
+    shifted = x >> position
+    return shifted & 0b1
