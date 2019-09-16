@@ -158,6 +158,30 @@ if desired > 0:
 
 
 1 - Create a variable num containing the number 12, or 0b1100.
+
 2 - Create a mask with the third bit on.
+
 3 - Use a bitwise-and operation to see if the third bit from the right of num is on.
+
 4 - If desired is greater than zero, then the third bit of num must have been one.
+
+
+
+Using the bitwise OR operator will turn a corresponding bit on if it is off and leave it on if it is already on.
+
+```
+num = 0b101000 # 40
+mask = 0b100 # Turn third bit On
+num = num | mask
+num = 0b101100 # 44
+```
+
+Using the XOR operator is very useful for flipping bits. Using XOR on a bit with the number one will return a result where that bit is flipped.
+
+
+```
+num = 0b101000 # 40
+mask = 0b111111 # Flip bits
+num = num ^ mask
+num = 0b10111 # 23
+```
