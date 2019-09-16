@@ -185,3 +185,12 @@ mask = 0b111111 # Flip bits
 num = num ^ mask
 num = 0b10111 # 23
 ```
+
+Using the left shift (<<) and right shift (>>) operators to slide masks into place.
+
+```
+num = 0b101 # 5
+# Tenth bit mask
+mask = (0b1 << 9)  # 0b1000000000 (512)
+num = num ^ mask # 0b1000000101 (517)
+```
