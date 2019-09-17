@@ -6,6 +6,3 @@ def twos_complement(input_value, num_bits):
 
 # Test
 print(twos_complement(4, 8))
-# for i in range(10):
-#     print("Number {} in binary : {}".format(str(i), bin(i)))
-#     print("Twos complement {} : {}".format(int(twos_complement(i, 8), 2), twos_complement(i, 8)))

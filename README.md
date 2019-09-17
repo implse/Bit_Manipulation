@@ -194,3 +194,25 @@ num = 0b101 # 5
 mask = (0b1 << 9)  # 0b1000000000 (512)
 num = num ^ mask # 0b1000000101 (517)
 ```
+
+### Two's Complement for Negative Integers
+
+Negative numbers are written with a leading one instead of a leading zero.
+
+So if you are using only 8 bits for your twos-complement numbers, then you treat patterns from "00000000" to "01111111" as the whole numbers from 0 to 127, and reserve "1xxxxxxx" for writing negative numbers.
+
+Two's complement subtracts off (1<<bits) if the highest bit is 1. Taking 8 bits for example, this gives a range of 127 to -128.
+
+find two's complement :
+  - Flip all the bit. (One's complement)
+  - Add 1
+
+```
+-128| 64| 32| 16| 8 | 4 | 2 | 1 | (-128) Sign bit
+---------------------------------
+  O | 0 | 0 | 0 | 0 | 0 | 1 | 1 |  = 3
+---------------------------------
+  1 | 1 | 1 | 1 | 1 | 1 | 0 | 1 |  = -3 in two's complement
+---------------------------------
+  0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  Sum (3 - 3) = 0
+```
