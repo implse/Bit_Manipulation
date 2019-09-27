@@ -4,18 +4,19 @@ Bitwise operations are operations that directly manipulate bits.
 
 ## Bitwise Operator
 
-- & (AND)
+```
+& (AND)
 
-- | (OR)
+| (OR)
 
-- ^ (XOR)
+^ (XOR)
 
-- ~ (NOT)
+~ (NOT)
 
-- << (LEFT SHIFT)
+<< (LEFT SHIFT)
 
-- \>> (RIGHT SHIFT)
-
+>> (RIGHT SHIFT)
+```
 
 ### AND
 
