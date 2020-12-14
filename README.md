@@ -20,9 +20,9 @@ Bitwise operations are operations that directly manipulate bits.
 
 ### AND
 
-The bitwise AND (&) operator compares two numbers on a bit level and returns a number where the bits of that number are turned on if the corresponding bits of both numbers are 1.
+The bitwise `AND` (&) operator compares two numbers on a `bit` level and returns a number where the `bits` of that number are turned `on` if the corresponding bits of both numbers are `1`.
 
-Only True if both input are True.
+Only `True` if both input `bits` are `True`.
 
 ```
 0 & 0 = 0
@@ -43,9 +43,9 @@ Only True if both input are True.
 
 ### OR
 
-The bitwise OR (|) operator compares two numbers on a bit level and returns a number where the bits of that number are turned on if either of the corresponding bits of either number are 1.
+The `bitwise` OR (|) operator compares two numbers on a `bit` level and returns a number where the `bits` of that number are turned `on` if either of the corresponding bits of either number are `1`.
 
-True if any input bit is True.
+`True` if any input `bit` is `True`.
 
 ```
 0 | 0 = 0
