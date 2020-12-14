@@ -43,7 +43,7 @@ Only `True` if both input `bits` are `True`.
 
 ### OR
 
-The `bitwise` OR (|) operator compares two numbers on a `bit` level and returns a number where the `bits` of that number are turned `on` if either of the corresponding bits of either number are `1`.
+The bitwise `OR` (|) operator compares two numbers on a `bit` level and returns a number where the `bits` of that number are turned `on` if either of the corresponding bits of either number are `1`.
 
 `True` if any input `bit` is `True`.
 
@@ -66,12 +66,12 @@ The `bitwise` OR (|) operator compares two numbers on a `bit` level and returns 
 
 ### XOR
 
-The XOR (^) or exclusive or operator compares two numbers on a bit level and returns a number where the bits of that number are turned on if either of the corresponding bits of the two numbers are 1, but not both.
+The `XOR` (^) or exclusive or operator compares two numbers on a `bit` level and returns a number where the `bits` of that number are turned `on` if either of the corresponding `bits` of the two numbers are `1`, but not both.
 
-True if one and only one input bit is True.
+`True` if one and only one input `bit` is `True`.
 
 ```
-O ^ 0 = 0
+0 ^ 0 = 0
 1 ^ 0 = 1
 0 ^ 1 = 1
 1 ^ 1 = 0
@@ -91,19 +91,27 @@ O ^ 0 = 0
 
 One's complement operator.
 
-Flips the input bit.
+Flips the input `bit`.
 
 ```
 ~ 0 = 1
 ~ 1 = 0
 ```
-Mathematically, this is equivalent to adding one to the number and then making it negative.
+Mathematically, this is equivalent to adding `one` to the number and then making it `negative`.
+
+```
+128| 64| 32| 16| 8 | 4 | 2 | 1 |
+--------------------------------
+ 0 | 0 | 1 | 1 | 0 | 0 | 1 | 0 | ~ (NOT)
+--------------------------------
+ 1 | 1 | 0 | 0 | 1 | 1 | 0 | 1 |
+```
 
 ### LEFT BIT SHIFT
 
-Shift the binary digits by n, pad 0's on the right.
+Shift the binary digits by `n`, pad `0`'s on the right.
 
-Each shift is a multiply by 2(unless there is overflow).
+Each shift is a multiply by `2`(unless there is overflow).
 
 ```
 128| 64| 32| 16| 8 | 4 | 2 | 1 |
