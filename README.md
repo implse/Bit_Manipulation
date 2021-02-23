@@ -166,7 +166,7 @@ if desired > 0:
 ```
 
 
-1 - Create a variable `numv containing the number 12`, or `0b1100`.
+1 - Create a variable `num` containing the number `12`, or `0b1100`.
 
 2 - Create a `mask` with the third bit `on`.
 
