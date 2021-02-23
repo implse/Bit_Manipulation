@@ -132,9 +132,9 @@ Each shift is a multiply by `2`(unless there is overflow).
 
 ### RIGHT BIT SHIFT
 
-Shift the binary digits by n, pad 0's on the left.
+Shift the binary digits by `n`, pad `0`'s on the left.
 
-Each shift is a divide by 2 with round towards negative infinity.
+Each shift is a divide by `2` with round towards negative infinity.
 
 ```
 128| 64| 32| 16| 8 | 4 | 2 | 1 |
@@ -155,7 +155,7 @@ You can only do bitwise operations on an integer.
 
 ### BIT MASK
 
-A bit mask is just a variable that aids you with bitwise operations. A bit mask can help you turn specific bits on, turn others off, or just collect data from an integer about which bits are on or off.
+A `bit mask` is just a variable that aids you with bitwise operations. A `bit mask` can help you turn specific bits `on`, turn others `off`, or just collect data from an integer about which bits are `on` or `off`.
 
 ```
 num  = 0b1100
@@ -166,17 +166,17 @@ if desired > 0:
 ```
 
 
-1 - Create a variable num containing the number 12, or 0b1100.
+1 - Create a variable `numv containing the number 12`, or `0b1100`.
 
-2 - Create a mask with the third bit on.
+2 - Create a `mask` with the third bit `on`.
 
-3 - Use a bitwise-and operation to see if the third bit from the right of num is on.
+3 - Use a bitwise `AND` operation to see if the third bit from the right of `num` is `on`.
 
-4 - If desired is greater than zero, then the third bit of num must have been one.
+4 - If desired is greater than zero, then the third bit of `num` must have been `one`.
 
 
 
-Using the bitwise OR operator will turn a corresponding bit on if it is off and leave it on if it is already on.
+Using the bitwise `OR` operator will turn a corresponding bit `on` if it is `off` and leave it `on` if it is already `on`.
 
 ```
 num = 0b101000 # 40
@@ -185,7 +185,7 @@ num = num | mask
 num = 0b101100 # 44
 ```
 
-Using the XOR operator is very useful for flipping bits. Using XOR on a bit with the number one will return a result where that bit is flipped.
+Using the `XOR` operator is very useful for `flipping bits`. Using `XOR` on a bit with the number one will return a result where that bit is `flipped`.
 
 
 ```
@@ -195,7 +195,7 @@ num = num ^ mask
 num = 0b10111 # 23
 ```
 
-Using the left shift (<<) and right shift (>>) operators to slide masks into place.
+Using the `left shift` (<<) and `right shift` (>>) operators to slide masks into place.
 
 ```
 num = 0b101 # 5
@@ -208,13 +208,13 @@ num = num ^ mask # 0b1000000101 (517)
 
 Negative numbers are written with a leading one instead of a leading zero.
 
-So if you are using only 8 bits for your twos-complement numbers, then you treat patterns from "00000000" to "01111111" as the whole numbers from 0 to 127, and reserve "1xxxxxxx" for writing negative numbers.
+So if you are using only 8 bits for your twos-complement numbers, then you treat patterns from `00000000` to `01111111` as the whole numbers from `0 to 127`, and reserve `1xxxxxxx` for writing negative numbers.
 
-Two's complement subtracts off (1<<bits) if the highest bit is 1. Taking 8 bits for example, this gives a range of 127 to -128.
+Two's complement subtracts off (`1<<bits`) if the highest bit is `1`. Taking `8 bits` for example, this gives a range of `127 to -128`.
 
 find two's complement :
   - Flip all the bit. (One's complement)
-  - Add 1
+  - Add `1`
 
 ```
 -128| 64| 32| 16| 8 | 4 | 2 | 1 | (-128) Sign bit
