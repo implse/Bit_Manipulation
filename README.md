@@ -111,6 +111,14 @@ Mathematically, this is equivalent to adding `one` to the number and then making
  1 | 1 | 0 | 0 | 1 | 1 | 0 | 1 |
 ```
 
+### Twist in bitwise one complement operator in Python and C
+
+The bitwise ~50 is -51 instead of 205.
+
+For an integer `i`, the bitwise complement of `i` is `-(i + 1)`.
+
+The integer representation of a number use the first `bit`to determine the `sign`.
+
 ### LEFT BIT SHIFT
 
 Shift the binary digits by `n`, pad `0`'s on the right.
