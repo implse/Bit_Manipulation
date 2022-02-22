@@ -1,6 +1,10 @@
 # Bit Manipulation
 
-Bitwise operations are operations that directly manipulate bits.
+Bitwise operations are operations that directly manipulate `bits`.
+
+A `bitwise` operator takes one or more values, treats them as sequences of `bits`, and performs operations on these `bits`.
+
+In `bits` level the operation will be much faster and efficient.
 
 ## Bitwise Operator
 
@@ -225,3 +229,33 @@ find two's complement :
 ---------------------------------
   0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |  Sum (3 - 3) = 0
 ```
+
+### Bitwise Combinations
+
+`~(A&B)` Bitwise `NAND`
+
+`~(A|B)` Bitwise `NOR`
+
+`~(A^B)` Bitwise `XNOR`
+
+`A>>>B` Bitwise unsigned right shift
+
+### Bitwise Assignments
+
+`A&=B` Bitwise `AND` assignment
+
+`A|=B` Bitwise `OR` assignment
+
+`A^=B` Bitwise `XOR` assignment
+
+`A<<=B` Bitwise left shift assignment
+
+`A>>=B` Bitwise right shift assignment
+
+`A>>>=B` Bitwise unsigned right shift assignment
+
+
+
+
+
+
