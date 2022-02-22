@@ -101,7 +101,6 @@ Flips the input `bit`.
 ~ 0 = 1
 ~ 1 = 0
 ```
-Mathematically, this is equivalent to adding `one` to the number and then making it `negative`.
 
 ```
 128| 64| 32| 16| 8 | 4 | 2 | 1 |
@@ -116,6 +115,8 @@ Mathematically, this is equivalent to adding `one` to the number and then making
 The bitwise ~50 is -51 instead of 205.
 
 For an integer `i`, the bitwise complement of `i` is `-(i + 1)`.
+
+Mathematically, this is equivalent to adding `one` to the number and then making it `negative`.
 
 The integer representation of a number use the first `bit`to determine the `sign`.
 
